@@ -8,12 +8,12 @@ function cotDolar() {
   dataCorreta.toString();
   
   var url = `https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao=%27${dataCorreta}%27&$top=100&$format=json`
-  var servico = new XMLHttpRequest()
+  var servico = new XMLHttpRequest() //classe js especifica para serviços
 
   servico.open('GET', url)
 
   servico.onload = () => {
-    var resposta = JSON.parse(servico.responseText)
+    var resposta = JSON.parse(servico.responseText) // conversão da resposta que stá em formato texto para JSON
 
     if (resposta.erro == 'true') {
       document.getElementById('resposta').innerHTML = 'Erro'
