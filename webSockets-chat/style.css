@@ -1,0 +1,68 @@
+body{
+  background-color: #5a636c;
+  font-weight: bold;
+  margin-top: 0;
+  padding: 0;
+}
+
+#inicio{
+  width: 600px;
+  margin: 0;
+  background-color: aliceblue;
+  border-radius: 8px;
+  padding-bottom: 15px;
+}
+
+header{
+  padding: 10px;
+}
+
+h1{
+  padding-top: 15px;
+}
+
+#chat{
+  width: 95%;
+}
+
+.mensagem{
+  font-weight: bold;
+}
+
+.mensagem::before{
+  color: blue;
+  font-size: 14px;
+}
+
+#log{
+  overflow: auto;
+  max-height: 350px;
+  list-style: none;
+  padding: 0;
+}
+
+#status{
+  padding: 10px;
+  color: orange;
+  background-color: black;
+}
+
+#log li{
+  border-top: 1px solid #0ed57c;
+}
+#status.sucesso{
+  background: #005b32
+}
+
+#status.falha{
+  background: rgb(88,0,0);
+
+}
+#status.offline{
+  background: rgb(115,115,115));
+}
+
+
+#status.online{
+  background: rgb(0,24,109);
+}

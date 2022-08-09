@@ -32,12 +32,14 @@
 
     
 
-   function cidades (){
+   async function cidades (){
       const ddd = 19
-      fetch(`https://brasilapi.com.br/api/ddd/v1/${ddd}`)
+      await fetch(`https://brasilapi.com.br/api/ddd/v1/${ddd}`)
       // fetch('https://jsonplaceholder.typicode.com/todos')
       .then((response)=> response.json())
       .then((data)=> console.log(data.state))
+
+      console.log("depois do fetch")
    }
    
    
